@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap')
+.edit-panel {
+  position: relative;
+  height: 420px;
+}
+
+.edit-area,
+.preview-area {
+  display: block;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.edit-panel button {
+  cursor: pointer;
+  font-size: 1.8rem;
+  border: 1px solid #959bff;
+  color: #959bff;
+  background: white;
+  position: relative;
+}
+
+.edit-panel button:hover {
+  opacity: 0.8;
+}
+
+.who-is-typing {
+  color: gray;
+  font-style: italic;
+  font-size: 0.8em;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+}
+
+.textbox-title {
+  font-size: 1.4em;
+  position: absolute;
+  top: -50px;
+  display: inline;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.textbox {
+  border: 1px solid gray;
+  color: #444444;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  height: 400px;
+  white-space: pre-wrap;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  font-family: 'Noto Sans Simplified Chinese', sans-serif;
+  overflow: auto;
+}
+
+.edit-textbox {
+  margin-bottom: -6px;
+}
+
+.preview-textbox {
+  background-color: rgb(248, 248, 248);
+}
+
+.preview-textbox:hover {
+  cursor: default;
+}
+
+/* make sure scrollbar appears when overflow exists */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+

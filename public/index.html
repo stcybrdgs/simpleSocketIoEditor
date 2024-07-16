@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Socket.io Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h1>Simple Socket.io Editor</h1>
+
+    <div class="edit-panel">
+      <div class="btn-row">
+        <button class="edit-btn" title="Edit">
+          <i class="fa-solid fa-pen-to-square"></i>
+        </button>
+        <button class="preview-btn" title="Preview">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+
+      <div class="edit-area">
+        <div class="textbox-title">Edit</div>
+        <textarea class="edit-textbox textbox"></textarea>
+      </div>
+
+      <div class="preview-area hidden">
+        <div class="textbox-title">Preview</div>
+        <div class="preview-textbox textbox"></div>
+      </div>
+      <div class="who-is-typing"></div>
+    </div>
+  </body>
+</html>
+
